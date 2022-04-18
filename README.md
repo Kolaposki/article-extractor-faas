@@ -1,6 +1,6 @@
 # Article Extractor Faas
 
-This is a project built to support the extraction of cleaned HTML for [Onebooky](onebooky.io)
+This is a project built to support the extraction of cleaned HTML for [Onebooky](https://onebooky.io)
 
 [Inspired by system.camp](https://system.camp/aws/serverless-article-extract-service-using-node-js-aws-lambda/)
 
