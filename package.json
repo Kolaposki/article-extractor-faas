@@ -1,0 +1,19 @@
+{
+  "name": "readability",
+  "description": "FAAS - Readability for onebooky",
+  "version": "1.0.0",
+  "author": "Kolapo Oshodi <oshodikolapo@gmail.com>",
+  "dependencies": {
+    "@mozilla/readability": "^0.4.2",
+    "dompurify": "^2.3.6",
+    "jsdom": "^19.0.0"
+  },
+  "keywords": [
+    "readability"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "devDependencies": {
+    "axios": "^0.26.1"
+  }
+}
