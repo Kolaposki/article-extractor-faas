@@ -13,7 +13,12 @@ const domPurifyOptions = {
 };
 
 exports.handler = async function (event) {
-  const url = event.multiValueHeaders.url[0];
+  console.log("Initiated Article Grabber")
+  console.log("event: ",event);
+  console.log("eventbody: ",event.body);
+  console.log("eventbody: ",event.body.url);
+  //const url = event.multiValueHeaders.url[0];
+  const url = event.body.url
   console.log(`url: ${url}`);
   let content = null;
   let excerpt = null;
