@@ -15,17 +15,17 @@ const domPurifyOptions = {
 exports.handler = async function (event) {
   console.log("Initiated Article Grabber")
   //console.log("event: ",event);
+  let body = JSON.parse(event.body)
   console.log("eventbody: ",event.body);
-  console.log("eventbody url: ",event.body["url"]);
-  console.log("eventbody url2: ", event.body[Object.keys(event.body)[0]]);
+  console.log("eventbody url: ",body["url"]);
+  console.log("eventbody url2: ", body[Object.keys(body)[0]]);
   console.log("multiValueHeaders: ",event.multiValueHeaders);
   let url;
   try {
     url = event.multiValueHeaders.Url[0]
   } catch (e) {
     if(e instanceof TypeError){
-      console.log("TypeError in multiValueHeaders. Now trying in body: ",event);
-      let body = event.body
+      console.log("TypeError in multiValueHeaders. Now trying in body: ");
       url = body[Object.keys(body)[0]]
     }
   }
