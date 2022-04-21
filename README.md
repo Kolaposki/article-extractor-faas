@@ -4,6 +4,7 @@ This is a project built to support the extraction of cleaned HTML for [Onebooky]
 
 [Inspired by system.camp](https://system.camp/aws/serverless-article-extract-service-using-node-js-aws-lambda/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/92658672-0851-4bea-a973-200e4868b01a/deploy-status)](https://app.netlify.com/sites/article-extractor/deploys)
 
 ## Project setup
 
