@@ -15,8 +15,9 @@ const domPurifyOptions = {
 exports.handler = async function (event) {
   console.log("Initiated Article Grabber")
   console.log("event: ",event);
-    console.log("eventbody: ",event.body);
-    console.log("eventbody url: ",event.body.url);
+  console.log("eventbody: ",event.body);
+  console.log("eventbody url: ",event.body['url']);
+  console.log("eventbody url2: ",event.body[0]);
   console.log("multiValueHeaders: ",event.multiValueHeaders);
   let url;
   try {
@@ -24,7 +25,7 @@ exports.handler = async function (event) {
   } catch (e) {
     if(e instanceof TypeError){
       console.log("TypeError in multiValueHeaders. Now trying in body: ",event);
-      url = event.body.url
+      url = event.body['url']
     }
   }
 
